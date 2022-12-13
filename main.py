@@ -66,7 +66,7 @@ async def train():
     nlp.to_disk(output_dir)
     print("Saved model to", output_dir)
 
-    return "success"
+    return "successfully trained the model!"
 
 @app.post("/extraction")
 async def extraction(query: InputQuery):
