@@ -27,7 +27,11 @@ training_data = [
     ('Batuk berdahak, Mual dan Hidung Meler. Sudah lama batuk kering juga. Curiga nya sih Influenza, tapi bisa jadi Covid juga ga sih', {'entities': [(0, 14, 'SYMPTOM'), (16, 20, 'SYMPTOM'), (25, 31, 'ORGAN'), (50, 62, 'SYMPTOM'), (84, 93, 'DISEASE'), (110, 115, 'DISEASE')]}),
     ('Batuk, Pilek dan Demam', {'entities': [(0, 5, 'SYMPTOM'), (7, 12, 'SYMPTOM'), (17, 22, 'SYMPTOM')]}),
     ('badan lemas, batuk dan pilek', {'entities': [(0, 11, 'SYMPTOM'), (14, 18, 'SYMPTOM'), (23, 28, 'SYMPTOM')]}),
-    ('Sakit kepala', {'entities': [(0, 12, 'SYMPTOM')]})
+    ('Sakit kepala', {'entities': [(0, 12, 'SYMPTOM')]}),
+    ('Kuping gatal', {'entities': [(0, 6, 'ORGAN'), (7, 12, 'SYMPTOM')]}),
+    ('Semenjak 10 hari yang lalu, perut sakit', {'entities': [(0, 8, 'TIME'), (28, 39, 'SYMPTOM')]}),
+    ('Nyeri perut dan nyeri tenggorokan', {'entities': [(0, 8, 'SYMPTOM'), (22, 33, 'ORGAN')]}),
+    ('Panas 37 derajat celcius', {'entities': [(0, 5, 'SYMPTOM'), (9, 24, 'ORGAN')]}),
 ]
 
 @app.get("/")
